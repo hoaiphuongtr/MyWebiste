@@ -1,0 +1,95 @@
+:root {
+    --font-web: 'Nunito', sans-serif;
+    --heading: 800;
+    --title: 500;
+    --medium-font-size: 1.2rem;
+    --large-font-size: 2rem;
+    --medium-height: 80px;
+    --large-width: 1300px;
+    --logo-color: #ff8177;
+    --padding-navbar-button: 0 1rem;
+    --full-height: 100%;
+    --full-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-web);
+}
+.navbar {
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--medium-font-size);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+}
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: var(--medium-height);
+    z-index: 1;
+    width: 100%;
+    max-width: var(--large-width);
+    margin: 0 auto;
+    padding: 0 50px;
+}
+#navbar_logo {
+    background-color: var(--logo-color);
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: var(--large-font-size);
+}
+.fa_gem {
+    margin-right: 0.5rem;
+}
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.navbar_item {
+    height: var(--medium-height);
+}
+.navbar_link {
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: var(--padding-navbar-button);
+    height: var(--full-height);
+}
+
+.navbar_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-navbar);
+    width: var(--full-width);
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: var(--full-height);
+    width: var(--full-width);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: #fff;
+}
